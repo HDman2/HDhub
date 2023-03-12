@@ -1746,15 +1746,14 @@ MainSection8:NewButton("Crash", "Game", function() -- Script
 getgenv().crasher = true
 
 while crasher == true do
-        task.wait(.5) -- make this lower or higher depending on your pc spec
+        wait(.1) -- make this lower or higher depending on your pc spec
         for i, v in pairs(game:GetChildren())
          do
-           game:GetService("ReplicatedStorage").ShopEvents.ShopEvent5:FireServer() 
-           game:GetService("ReplicatedStorage").ShopEvents.ShopEvent5:FireServer() 
-           game:GetService("ReplicatedStorage").ShopEvents.ShopEvent5:FireServer() 
-           game:GetService("ReplicatedStorage").ShopEvents.ShopEvent5:FireServer() 
-           game:GetService("ReplicatedStorage").ShopEvents.ShopEvent5:FireServer() 
-           game:GetService("ReplicatedStorage").ShopEvents.ShopEvent5:FireServer() 
+           local args = {
+           [1] = "Plane",
+           [2] = -500
+           }
+	   game:GetService("ReplicatedStorage").BuyGear:FireServer(unpack(args))
         end
         for _,v in pairs(game:GetService("Players").LocalPlayer.Backpack:GetChildren()) do
         if v:IsA("Tool") then
