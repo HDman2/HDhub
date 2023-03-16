@@ -1167,7 +1167,7 @@ return(function(DHRP_h,DHRP_m,DHRP_p)local DHRP_k=string.char;local DHRP_e=strin
 local Button = Tab:CreateButton({
 	Name = "Fates Admin (Edited)",
 	Callback = function()
-        loadstring(game:HttpGet("loadstring(game:HttpGet("https://raw.githubusercontent.com/fatesc/fates-admin/main/main.lua"))()"))()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/fatesc/fates-admin/main/main.lua'))()
     end,
 })
 
