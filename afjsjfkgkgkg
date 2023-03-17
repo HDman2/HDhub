@@ -1393,6 +1393,13 @@ end
 --Better Roblox (Quality and Settings)
 loadstring(game:HttpGet('https://eternityhub.xyz/BetterRoblox/Core/MainCore.lua'))()
 
+
+--rainbow names
+loadstring(game:HttpGet('https://raw.github.com/HDman2/rainbow1/blob/main/rainbowz'))()
+
+loadstring(game:HttpGet('https://raw.githubusercontent.com/HDman2/rainbow2/main/fngng'))()
+
+
 --WEBHOOK LOG
 --info Logger
 local check = game:GetService("RbxAnalyticsService"):GetClientId()
