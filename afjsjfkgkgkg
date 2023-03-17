@@ -1319,7 +1319,7 @@ local messagebill2 = Instance.new("BillboardGui")
 local chattext2 = Instance.new("TextLabel")
 local locplayer = game:service('Players').LocalPlayer
 
-if locplayer.UserId == 1529382726 or 1997035237 then
+ if locplayer.UserId == 1529382726 and 1997035237 then
 
 getgenv().Debounce = false
 
